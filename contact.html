@@ -7,6 +7,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <title>Contact me</title>
+
+  <style>
+    .bg-info {
+      background-color: #0d6efd !important;
+    }
+
+    .bg-light {
+      background-color: #f8f9fa !important;
+    }
+
+    .bg-dark {
+      background-color: #000000 !important;
+    }
+
+    .bg-primary {
+      background-color: #0d6efd !important;
+    }
+
+    .border-primary {
+      border-color: #0d6efd !important;
+    }
+
+    .border-dark {
+      border-color: #212529 !important;
+    }
+
+    .text-white {
+      color: #fff !important;
+    }
+
+    .text-dark {
+      color: #212529 !important;
+    }
+
+    .text-capitalize {
+      text-transform: capitalize !important;
+    }
+
+    .text-decoration-none {
+      text-decoration: none !important;
+    }
+
+    .text-center {
+      text-align: center !important;
+    }
+
+    .text-danger {
+      color: #dc3545 !important;
+    }
+
+    .text-primary {
+      color: #0d6efd !important;
+    }
+
+    .text-white {
+      color: #fff !important;
+    }
+  </style>
 </head>
 
 <body class="bg-info">
@@ -17,25 +75,36 @@
     container col-10 col-md-4 col-lg-3 col-xl-4 mt-5 mb-5 p-5 border border-2 border-dark rounded-3 bg-dark shadow-lg text-center text-white text-capitalize text-decoration-none 
     ">
         <div class="form-group">
-            <label for="exampleInputEmail1">your name</label>
+            <label for="exampleInputEmail1">your name</label><sup class="text-danger">*</sup>
             <input type="text" name="FirstName" class="form-control
             bg-dark border-primary border-2 border-primary rounded-3 p-2 mt-3 mb-3 text-capitalize text-decoration-none text-center text-white
-            " placeholder="Enter your name">
+            " placeholder="Enter your name"
+            autocomplete="on"
+            autofocus
+            required
+            >
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">your email</label>
+          <label for="exampleInputEmail1">your email</label><sup class="text-danger">*</sup>
           <input type="email" name="email" class="form-control bg-dark border-primary 
             border-2 border-primary rounded-3 p-2 mt-3 mb-3 text-capitalize text-decoration-none text-center text-white
-          " placeholder="Enter email">
+          "
+           placeholder="Enter email"
+           autocomplete="on"
+           autofocus
+           required
+           >
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">subject</label>
+          <label for="exampleInputPassword1">subject</label><sup class="text-danger">*</sup>
           <textarea 
             name="subject"
+            cols="30" rows="10" maxlength="1000"
+            autofocus
             class="form-control bg-dark text-white border border-2 border-primary rounded-3 p-2 mt-3 mb-3 text-capitalize text-decoration-none text-center text-white" 
           ></textarea>
         </div>
-          <input type="submit" name="submit" value="Submit" class="bg-primary border-dark border-2 rounded-3 p-3 col-10 mt-3 mb-3 text-capitalize text-decoration-none text-center text-white
+          <input type="submit" value="Submit" class="bg-primary border-dark border-2 rounded-3 p-3 col-10 mt-3 mb-3 text-capitalize text-decoration-none text-center text-white
           ">
       </form>
 </body>
